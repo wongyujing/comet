@@ -1,0 +1,21 @@
+{
+  "name": "comet",
+  "version": "1.0.0",
+  "description": "frontend performance monitor",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./build/webpack.config.js"
+  },
+  "keywords": [
+    "performance",
+    "monitor"
+  ],
+  "author": "wongyujing",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
