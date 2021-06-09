@@ -6,7 +6,7 @@ const pathResolve = (p) => path.resolve(__dirname, p);
 module.exports = {
   mode: 'development',
   context: process.cwd(),
-  entry: pathResolve('../index.ts'),
+  entry: pathResolve('../src/index.ts'),
   devServer: {
     contentBase: pathResolve('../dist'),
     port: 8080,
