@@ -29,6 +29,16 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+    extensions: ['.ts', '.tsx', '.js'],
+    fallback: {
+      buffer: require.resolve('buffer/'),
+      tty: require.resolve('tty-browserify'),
+      path: require.resolve('path-browserify'),
+      console: require.resolve('console-browserify'),
+      vm: require.resolve('vm-browserify'),
+      util: require.resolve('util/'),
+      https: require.resolve('https-browserify'),
+      http: require.resolve('stream-http'),
+    },
   },
 }
